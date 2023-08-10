@@ -1,42 +1,5 @@
 -
-    host: "100.90.165.32"
-    port: "8042"
-    group: "算法"
-    monitor_key: "monitor_telnet_100.90.165.32:8042"
-
--
-    host: "100.90.165.32"
-    port: "8083"
-    group: "算法"
-    monitor_key: "monitor_telnet_100.90.165.32:8083"
-
--
-    host: "100.90.164.31"
-    port: "8096"
-    group: "算法"
-    monitor_key: "monitor_telnet_100.90.164.31:8096"
-
--
-    host: "100.90.164.31"
-    port: "8083"
-    group: "算法"
-    monitor_key: "monitor_telnet_100.90.164.31:8083"
-
-
--
-    host: "10.88.128.149"
-    port: "31259"
-    group: "算法"
-    monitor_key: "monitor_telnet_10.88.128.149:31259"
-
--
-    host: "10.88.128.149"
-    port: "32484"
-    group: "算法"
-    monitor_key: "monitor_telnet_10.88.128.149:32484"
-
--
-    host: "10.88.128.149"
-    port: "32326"
-    group: "算法"
-    monitor_key: "monitor_telnet_10.88.128.149:32326"
+    host: "127.0.0.1"
+    port: "8080"
+    group: "api"
+    monitor_key: "monitor_telnet_127.0.0.1:8080"

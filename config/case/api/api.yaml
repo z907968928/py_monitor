@@ -1,6 +1,6 @@
 -
     name: "movement"
-    host: "http://10.85.128.137"
+    host: "http://127.0.0.1:8080"
     uri: "/its/signal-map/flow/movement"
     params:
         city_id: "38"
@@ -25,7 +25,7 @@
 
 -
     name: "user_group_area"
-    host: "http://10.169.153.60:8088"
+    host: "http://127.0.0.1:8080"
     uri: "/user/userGroup/area/list"
     params:
         appId: "789"
@@ -49,7 +49,7 @@
 
 -
     name: "geomesa_vehicle-mm"
-    host: "http://100.69.239.84:8009"
+    host: "http://127.0.0.1:8080"
     uri: "/geomesa-vehicle-mm-wfs"
 #    uri: "/geomesa-vehicle-mm-wfs?CQL_FILTER=intersects%28geom%2CPOLYGON%20%28%28120.673130%2031.320850%2C120.673130%2031.321980%2C120.665990%2031.321980%2C120.665990%2031.320850%2C120.673130%2031.320850%29%29%29%20and%20timestamp%20between%20%27{geomesa_start}%27%20and%20%27{geomesa_end}%27%20&access_id=diyu&access_key=01AC1181F83964DF&group_id=1&outputFormat=application%2Fjson&request=GetFeature&service=wfs&typeNames=geomesa%3AVEHICLE_CAMERA_MM_NEW&version=1.0.0"
     params:
