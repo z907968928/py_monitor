@@ -1,0 +1,12 @@
+name: 'api'
+type: 'es'
+host: ''  # api请求地址
+uri: '/_sql'  # api 请求后缀
+method: 'json'  # api method
+params:   # api 参数
+func: 'check_es'
+value_type: 'json'
+monitor_key_prefix: 'monitor_es_'
+warning_title: 'es数据监控异常'
+level: 'P0' # 报警等级
+timeout: 10

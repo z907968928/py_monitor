@@ -1,0 +1,10 @@
+host: '127.0.0.1'
+port: '6379'
+redis_key: ''  # get key?
+value_type: 'text'  # get key 返回值类型  （text json）
+assert_true: 'False'  # get key 校验规则
+func: 'check_redis'
+is_send_msg: True
+monitor_key_prefix: 'monitor_redis_'
+warning_title: 'Redis数据监听异常'
+type: 'redis'

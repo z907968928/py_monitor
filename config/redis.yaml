@@ -1,0 +1,7 @@
+default:
+      HOST: "localhost"
+      PORT: 6379
+
+its-tool:
+      HOST: "localhost"
+      PORT: 6379

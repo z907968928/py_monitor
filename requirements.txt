@@ -1,0 +1,13 @@
+certifi=2021.5.30
+chardet=4.0.0
+idna=2.10
+jsonpath=0.82
+pip==20.3.4
+PyMySQL=0.10.1
+PyTelnet=1.0.1
+PyYAML= 5.4.1
+redis=3.5.3
+requests=2.26.0
+setuptools=28.8.0
+toml=0.10.2
+urllib3=1.26.6

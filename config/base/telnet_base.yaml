@@ -1,0 +1,8 @@
+send_message: True
+monitor_key_prefix: 'monitor_telnet_'
+func: 'check_telnet'
+warning_title: '服务监听异常'
+monitor_interval: 100
+type: 'telnet'
+timeout: 5
+

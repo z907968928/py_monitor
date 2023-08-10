@@ -1,0 +1,15 @@
+-
+    name: "mysql_word_report_timeout"
+    monitor_key: "monitor_mysql_word_report_timeout"
+    sql: "select id,create_at from word_report where status: 0 and create_at >= '${START_HOUR}' and create_at <= '${END_HOUR}'"
+    db: "default"
+    monitor_interval: 3600
+    group: "mysql_word_report_timeout"
+    desc: "deword_report_超时"
+    warning_title: "word_report超时监控异常"
+    assert_true:
+      -
+        actual: "${CASE_RESULT}"
+        assert: "lenLe"
+        expected: 0
+        err_desc: "word_report超时"

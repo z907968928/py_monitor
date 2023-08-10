@@ -1,0 +1,44 @@
+-
+    name: "flow_duration_v6_${CITY_ID}"
+    host: "${ES2307}"
+    uri: "/_sql"
+    params: "select count(*) from cn_${CITY_ID}_flow_duration_v6* where dt in('${YESTERDAY}')"
+    method: "post"
+    func: "check_es"
+    desc: "${CITY_NAME}_flow_duration_v6_离线数据"
+    group: "es_flow_duration_v6"
+    monitor_key: "monitor_api_es_duration_${CITY_ID}"
+    monitor_interval: 100
+    time_slot:
+      -
+        start_time: "08:00:00"
+        end_time: "21:00:00"
+    assert_true:
+      -
+        actual: "$.hits.total"
+        assert: "<="
+        expected: 0
+        err_desc: "数据量为空"
+
+#-
+#    name: "flow_duration_v6_${CITY_ID}_MONTH"
+#    host: "${ES2307}"
+#    uri: "/_sql"
+#    params: "select * from cn_${CITY_ID}_flow_duration_v6_${MONTH}  where dt='{YESTERDAY}' and traj_count>5 limit 1"
+#    func: "check_es"
+#    desc: "${CITY_NAME}_flow_duration_v6_离线数据"
+#    group: "es_flow_duration_v6"
+#    monitor_key: "monitor_api_es_duration_${CITY_ID}"
+#    monitor_interval: 100
+#    time_slot:
+#      -
+#        start_time: "08:00:00"
+#        end_time: "21:00:00"
+#    assert_true:
+#      -
+#        assert_key: "$.hits.total"
+#        assert: ">"
+#        expected: 0
+#        err_desc: "数据量为空"
+#        func: "check_scatter_diagram"
+#

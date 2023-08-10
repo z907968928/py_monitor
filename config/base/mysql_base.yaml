@@ -1,0 +1,9 @@
+db: 'default'
+type: 'mysql'
+sql: 'select count(1) from area'
+value_type: 'text'  # get sql 返回值类型  （text json）
+assert_true: 'False'  # get sql 校验规则
+func: 'check_mysql'
+monitor_key_prefix: 'monitor_mysql_'
+warning_interval: 600
+warning_title: 'Mysql数据监听异常'

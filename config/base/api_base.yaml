@@ -1,0 +1,12 @@
+name: 'api'
+type: 'api'
+host: ''  # api请求地址
+uri: '/_sql'  # api 请求后缀
+method: 'json'  # api method
+params: ''  # api 参数
+level: 'P0' # 报警等级
+func: 'check_api'
+monitor_key_prefix: 'monitor_api_'
+value_type: 'json'
+warning_title: '接口监听异常'
+timeout: 10

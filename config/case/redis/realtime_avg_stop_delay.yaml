@@ -1,0 +1,30 @@
+-
+    name: "redis_realtime_avg_stop_delay_${CITY_ID}"
+    monitor_key: "monitor_redis_realtime_avg_stop_delay_${CITY_ID}"
+    redis_key: "new_its_realtime_avg_stop_delay_${CITY_ID}_${TODAY}"
+    monitor_interval: 100
+    group: "realtime_avg_stop_delay"
+    desc: "redis_realtime_avg_stop_delay"
+#    host: "100.69.239.57"
+#    port: "3060"
+    redis: "its-tool"
+    assert_true:
+      -
+       actual: "${CASE_RESULT}"
+       assert: "notEmpty"
+       err_desc: "redis无数据"
+       eval:
+        AVG_STOP_DELAY_COMPARE: "abs(case_result[-1]['avg_stop_delay'] - case_result[-2]['avg_stop_delay']) / case_result[-2]['avg_stop_delay']"
+      -
+#        actual: "eval(abs(${CASE_RESULT}[-1]['avg_stop_delay'] - ${CASE_RESULT}[-2]['avg_stop_delay']) / ${CASE_RESULT}[-2]['avg_stop_delay'] > 0.3)"
+        actual: "${AVG_STOP_DELAY_COMPARE}"
+        assert: "<="
+        expected: 0.3
+        err_desc: "avg_stop_delay - last_avg_stop_delay / last_avg_stop_delay > 0.3"
+
+#      -
+#        e: "abs(res[-1]['avg_stop_delay'] - res[-2]['avg_stop_delay'])/res[-2]['avg_stop_delay'] > 0.3"
+#        assert_true: "$.[-1].avg_stop_delay - $.[-2]"
+#        assert: "in"
+#        expected: 0
+#        err_desc: "avg_stop_delay - last_avg_stop_delay / last_avg_stop_delay > 0.3"

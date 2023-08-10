@@ -1,0 +1,76 @@
+-
+    name: "movement"
+    host: "http://10.85.128.137"
+    uri: "/its/signal-map/flow/movement"
+    params:
+        city_id: "38"
+        logic_junction_id: "2017030116_4391010"
+        logic_flow_id: "all"
+        version: "2020030417"
+        token: "4c3e3b6a3588161128d0604daab528db"
+        user_id: "signalPro"
+    header:
+    method: "get"
+    desc: "路网接口"
+    monitor_key: "monitor_api_movement"
+    group: "api_movement"
+    monitor_interval: 100
+    assert_true:
+      -
+          actual: "$.errorCode"
+          assert: "=="
+          expected: 0
+          err_desc: "错误码不为0"
+        #assert_true: "False"
+
+-
+    name: "user_group_area"
+    host: "http://10.169.153.60:8088"
+    uri: "/user/userGroup/area/list"
+    params:
+        appId: "789"
+        appKey: "428ffe82b8f7048aa446a58bc988719e"
+        sign: "514efac88b354b73f7a1a9f859043773"
+        time: "1581548442"
+        userName: "13589385131"
+    method: "get"
+    header:
+    desc: "大脑UPM接口"
+    monitor_key: "monitor_api_upm_user_group_area"
+    monitor_interval: 100
+    group: "api_upm_user_group_area"
+    assert_true:
+      -
+          actual: "$.code"
+          assert: "=="
+          expected: 200
+          err_desc: "错误码不为200"
+        #assert_true: "res['code'] != 200"
+
+-
+    name: "geomesa_vehicle-mm"
+    host: "http://100.69.239.84:8009"
+    uri: "/geomesa-vehicle-mm-wfs"
+#    uri: "/geomesa-vehicle-mm-wfs?CQL_FILTER=intersects%28geom%2CPOLYGON%20%28%28120.673130%2031.320850%2C120.673130%2031.321980%2C120.665990%2031.321980%2C120.665990%2031.320850%2C120.673130%2031.320850%29%29%29%20and%20timestamp%20between%20%27{geomesa_start}%27%20and%20%27{geomesa_end}%27%20&access_id=diyu&access_key=01AC1181F83964DF&group_id=1&outputFormat=application%2Fjson&request=GetFeature&service=wfs&typeNames=geomesa%3AVEHICLE_CAMERA_MM_NEW&version=1.0.0"
+    params:
+        CQL_FILTER: "intersects(geom,POLYGON ((120.673130 31.320850,120.673130 31.321980,120.665990 31.321980,120.665990 31.320850,120.673130 31.320850))) and timestamp between '${GEOMESA_START}' and '${GEOMESA_END}'"
+        access_id: "diyu"
+        access_key: "01AC1181F83964DF"
+        group_id: "1"
+        outputFormat: "application/json"
+        request: "GetFeature&service=wfs"
+        typeNames: "geomesa:VEHICLE_CAMERA_MM_NEW"
+        version: "1.0.0"
+    method: "get"
+    header:
+    desc: "车载接口"
+    monitor_key: "monitor_api_geomesa_vehicle-mm"
+    group: "api_geomesa_vehicle-mm"
+    monitor_interval: 960
+    assert_true:
+      -
+          actual: "$.features"
+          assert: "<="
+          expected: 0
+          err_desc: "数据量为空"
+#        assert_true: "'features' not in res"

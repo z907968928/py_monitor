@@ -1,0 +1,13 @@
+default:
+      USER: "root"
+      PASSWORD: "root"
+      HOST: "localhost"
+      PORT: 3306
+      DB: "monitor"
+    
+its-tool:
+      USER: "root"
+      PASSWORD: "Znjty@Didi@2017"
+      HOST: "100.90.164.31"
+      PORT: 8004
+      DB: "its_tool"

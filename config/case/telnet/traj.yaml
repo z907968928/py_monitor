@@ -1,0 +1,5 @@
+-
+    host: "10.85.128.81"
+    port: "30187"
+    group: "traj-service"
+    monitor_key: "monitor_telnet_10.85.128.81:30187"

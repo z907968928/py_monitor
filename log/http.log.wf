@@ -1,0 +1,35 @@
+2021-07-20 13:43:03	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:44:44	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:48:43	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:51:23	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:53:56	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:54:22	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:54:47	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:54:56	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:56:58	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 13:57:42	E:\python\data_service_monitor\tool\http.py:22	[url]:http://100.69.239.84:8009/geomesa-vehicle-mm-wfs	[retry]:-1	[err_msg]:http code not 200	[method]:get	
+2021-07-20 14:24:12	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2317:W2oTX7qT7nYTKuD@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:33	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:33	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:33	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:33	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:34	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:24:36	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2317:W2oTX7qT7nYTKuD@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:json	
+2021-07-20 14:28:16	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2317:W2oTX7qT7nYTKuD@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:28:49	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2317:W2oTX7qT7nYTKuD@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:29:10	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:29:11	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:29:11	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:29:11	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:29:11	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:06	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:06	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:06	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 14:30:07	E:\python\data_service_monitor\tool\http.py:22	[url]:http://2307:grybWz4J28seQiL@100.90.164.31:8005/_sql	[retry]:-1	[err_msg]:http code not 200	[method]:post	
+2021-07-20 15:40:43	E:\python\data_service_monitor\tool\http.py:20	[url]:http://10.85.128.137/its/signal-map/flow/movement	[retry]:-1	[err_msg]:HTTPConnectionPool(host='10.85.128.137', port=80): Max retries exceeded with url: /its/signal-map/flow/movement?token=4c3e3b6a3588161128d0604daab528db&version=2020030417&user_id=signalPro&logic_junction_id=2017030116_4391010&city_id=38&logic_flow_id=all (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000000004B24388>, 'Connection to 10.85.128.137 timed out. (connect timeout=10)'))	[method]:get	
+2021-07-20 15:40:53	E:\python\data_service_monitor\tool\http.py:20	[url]:http://10.169.153.60:8088/user/userGroup/area/list	[retry]:-1	[err_msg]:HTTPConnectionPool(host='10.169.153.60', port=8088): Max retries exceeded with url: /user/userGroup/area/list?appKey=428ffe82b8f7048aa446a58bc988719e&userName=13589385131&time=1581548442&appId=789&sign=514efac88b354b73f7a1a9f859043773 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x0000000004B1FAC8>, 'Connection to 10.169.153.60 timed out. (connect timeout=10)'))	[method]:get	

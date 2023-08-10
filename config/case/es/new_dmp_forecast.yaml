@@ -1,0 +1,58 @@
+-
+    name: "new_dmp_forecast_${CITY_ID}"
+    host: "${ES2317}"
+    uri: "/_sql"
+    params: "select * from new_dmp_forecast where city_id=${CITY_ID} order by day_time_hms desc limit 1"
+    func: "check_es"
+    method: "post"
+    desc: "${CITY_NAME}_new_dmp_forecast_实时数据"
+    group: "es_dmp_forecast"
+    monitor_key: "monitor_api_es_forecast_${CITY_ID}"
+    monitor_interval: 3600
+    time_slot:
+      -
+        start_time: "08:00:00"
+        end_time: "21:00:00"
+    assert_true:
+      -
+        actual: "$.hits.hits.0._source.day_time_hms"
+        assert: "datetimeToTimeStmapLt"
+        expected: 900
+        err_desc: "时间差值大于900s"
+        format: "%Y-%m-%d %H:%M:%S"
+
+
+-
+    name: "new_dmp_forecast_last_${CITY_ID}"
+    host: "${ES2317}"
+    uri: "/_sql"
+    params: "select count(DISTINCT(logic_junction_id)) from new_dmp_forecast where city_id=${CITY_ID} and traj_num>=5 and day_time_hms= '${LAST_DATE_TIME}'"
+    func: "check_cliff"
+    desc: "${CITY_NAME}_掉崖警告_new_dmp_forecast"
+    group: "es_new_dmp_forecast"
+    monitor_key: "monitor_api_es_new_dmp_forecast_${CITY_ID}"
+#    redis_host: "100.69.239.57"
+#    redis_port: "3060"
+    redis: "its-tool"
+    redis_key: "new_its_realtime_lasthour_${CITY_ID}"
+    monitor_interval: 100
+    time_slot:
+      -
+        start_time: "08:00:00"
+        end_time: "21:00:00"
+
+    assert_true:
+      -
+        actual: "$.hits.total"
+        assert: "<="
+        expected: 0
+        err_desc: "数据量为空"
+
+    last_assert_true:
+      -
+        actual: "${LAST_SUBTRACT_NOW_TOTAL}"
+        assert: "<="
+        expected: "${TOTAL_EXPECTED}"
+        err_desc: "数据掉崖"
+#        assert_true: self.(last_res['hits']['total'] - res['hits']['total']) > last_res['hits']['total'] * 0.2"
+#        desc: "数据掉崖"

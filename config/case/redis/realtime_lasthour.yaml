@@ -1,0 +1,25 @@
+-
+    name: "redis_realtime_lasthour_${CITY_ID}"
+    monitor_key: "monitor_redis_realtime_lasthour_${CITY_ID}"
+    redis_key: "new_its_realtime_lasthour_${CITY_ID}"
+    monitor_interval: 100
+    group: "realtime_lasthour"
+    desc: "deword_report_超时"
+#    host: "100.69.239.57"
+#    port: "3060"
+    redis: "its-tool"
+    assert_true:
+      -
+        actual: "${CASE_RESULT}"
+        assert: "notEmpty"
+        err_desc: "redis无数据"
+#        eval:
+#          TIME_DIFF: "${NOT_TIME_STMAP} - time.mktime(time.strptime('${TODAY}'+ str('${CASE_RESULT}'), '%Y-%m-%d%H:%M:%S'))"
+      -
+        actual: "${CASE_RESULT}"
+        assert: "datetimeToTimeStmapLe"
+        date_format: "%H:%M:%S"
+        expected: 900
+#        actual: "eval(${NOW_TIME_STMAP} - time.mktime(time.strptime('${TODAY}'+ str(${CASE_RESULT}), '%Y-%m-%d%H:%M:%S')) > 900')"
+#        actual: "${NOW_TIME_STMAP} - time.mktime(time.strptime('${TODAY}'+ str(res), '%Y-%m-%d%H:%M:%S')) > 900'"
+        err_desc: "时间间隔大于15分钟"

@@ -1,0 +1,40 @@
+name: '' #case name
+group: '' #所属组
+level: 'P0' #等级
+desc: '' #描述
+type: '' #类型
+
+warning_title: '监控异常' # 报警内容title
+monitor_key_prefix: 'monitor_'  # redis 保存报警key前缀
+monitor_interval: 960 # 监控间隔时间
+
+send_webhook: true #是否webhook通知
+webhook_url: "https://im-dichat.xiaojukeji.com/api/hooks/incoming/032896b5-7c86-4cb3-bd8a-6ab065cf8d8a" #数据监控报警
+#webhook_url: "https://im-dichat.xiaojukeji.com/api/hooks/incoming/47f8da8a-567b-493e-91f5-bb7fcc32cbaf" #测试
+webhook_interval: 3600 # 监控报警间隔时间
+
+send_message: false #是否短信通知通知
+message_url: "http://10.183.232.147:8035/external/send_message" #短信通知url
+message_interval: 86400 # 短信报警间隔
+phone: [
+    '15296671847', #fuzhe
+    '15501248956', #niuyufu
+    '13716319450', #zhuyewei
+    '18868108944'  #liuminjun
+    ]
+
+
+send_email: false #是否邮件通知
+email: [
+       'fuzhe6_v@didiglobal.com'
+    ]
+email_interval: 86400 #邮件报警间隔
+
+
+time_slot:
+  -
+    start_time: '08:00:00'  #monitor start time
+    end_time: '21:00:00'    #monitor end time
+#  -
+#    start_time: '21:00:00'  #monitor start time
+#    end_time: '24:00:00'    #monitor end time

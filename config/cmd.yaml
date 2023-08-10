@@ -1,0 +1,24 @@
+--monitor_type:
+      default: "all"
+      help: "api or telnet or redis or es or mysql or all"
+      nargs: "?"
+
+--case_group:
+      default: "all"
+      help: "case group"
+      nargs: "?"
+
+--case_name:
+      default: "all"
+      help: "case or all"
+      nargs: "?"
+
+--thread_num :
+      default: 100
+      help: "max thread num"
+      nargs: "?"
+
+--is_test:
+      default: 1
+      help: "is test"
+      nargs: "?"

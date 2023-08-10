@@ -1,0 +1,24 @@
+-
+    host: "100.90.165.26"
+    port: "50000"
+    group: "thrift-inherit"
+    monitor_key: "monitor_telnet_100.90.165.26:50000"
+
+-
+    host: "10.89.236.26"
+    port: "50000"
+    group: "thrift-inherit"
+    monitor_key: "monitor_telnet_10.89.236.26:50000"
+
+-
+    host: "100.90.165.26"
+    port: "50001"
+    group: "thrift-shmdata"
+    monitor_key: "monitor_telnet_100.90.165.26:50001"
+
+
+-
+    host: "10.89.236.26"
+    port: "50001"
+    group: "thrift-shmdata"
+    monitor_key: "monitor_telnet_10.89.236.26:50001"
